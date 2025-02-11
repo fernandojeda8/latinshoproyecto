@@ -1,0 +1,38 @@
+body.home.no-bootstrap
+    header
+        div.logo-container
+            a.logo
+            h2.nombreempresa
+        nav.menu
+            a[href="index.html"]
+            a[href="../page/nosotros.html"]
+            a[href="../page/productos.html"]
+            a.entrega-boot1[href="../page/productosboot.html"]
+            a[href="../page/servicios.html"]
+            a.entrega-boot2[href="../page/serviciosboot.html"]
+            a[href="../page/contactanos.html"]
+
+    main
+        section
+            div.container
+                div.left
+                    figure
+                        img
+                div.right
+                    iframe
+
+    footer
+        div.redes-sociales
+            ul
+                li
+                    a[href="https://www.instagram.com/"]
+                        img
+                li
+                    a[href="https://web.whatsapp.com/"]
+                        img
+                li
+                    a[href="https://www.mercadolibre.com.ar/"]
+                        img
+        div.copi
+            p
+            p
