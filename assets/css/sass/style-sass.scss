@@ -1,0 +1,258 @@
+@forward "normalize";
+
+
+h1 {
+    color: black;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h4 {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* --------inicio del header-------- */
+header {
+    height: 80px;
+    position: relative;
+    z-index: 999;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            max-width: 70px;
+            margin-right: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    //bootstrap
+    .navbar-brand {
+        max-width: 70px;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+        }
+
+        .navboot {
+            background-color: #48A46B;
+        }
+    }
+
+    nav {
+        a {
+            font-weight: 600px;
+        }
+    }
+
+    h2 {
+        &.nombreempresa {
+            width: auto
+        }
+    }
+
+    .navboot {
+        background-color: #48A46B;
+    }
+}
+
+.no-bootstrap header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #48A46B;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+main {
+    padding-top: 20px;
+
+    section {
+
+        .container {
+            height: 100%;
+
+            .row {
+                height: 100%;
+            }
+        }
+    }
+
+    &.home {
+        section {
+            height: calc(100vh - 217px);
+
+            .container {
+                figure {
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &.nosotros-page section {
+
+        // height: 500pv;
+        .container {
+
+            .textinfo {
+
+                background-color: gray;
+                display: table;
+
+                p {
+                    text-align: center;
+                    margin: auto;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+
+            figure {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+
+    &.productos-page {
+        section {
+            // height: 100%;
+            align-items: start;
+
+            .container {
+                .left {
+                    .textinfo {
+
+                        width: 816px;
+                        height: 413px;
+                        background-color: gray;
+                        display: table;
+
+                    }
+
+                    h1 {
+                        font-size: 64px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.servicio-page {
+        section {
+            .container {
+                h1 {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &.contactanos-page {
+        section {
+            .container {
+                .formulario {
+                    background-color: color(srgb 1 1 1 / 0.09);
+                    padding: 14px;
+                    font-size: 22px;
+                    border-radius: 20px;
+                    margin-bottom: 40px;
+
+                    fieldset {
+                        margin-bottom: 8px;
+
+                        label {
+                            display: block;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/* --------inicio del footer-------- */
+
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #48A46B;
+    justify-content: space-between;
+    z-index: 99;
+    position: relative;
+
+    // bottom: 0;
+    .redes-sociales {
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 14px 4px 8px 4px;
+
+                a {
+                    img {
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .copi {
+        text-align: center;
+        padding-bottom: 14px;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
