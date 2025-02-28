@@ -36,3 +36,8 @@ body.home.no-bootstrap
         div.copi
             p
             p
+
+
+
+
+se aplica estas clases "wow bounceInUp" se carga el css en el head y el script debajo del footer, solo esta en el index, y servicio

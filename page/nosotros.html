@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style-new.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
 </head>
 
 <body>
@@ -18,7 +19,9 @@
         <nav class="navbar navbar-expand-lg navboot">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/img/icons/logolatinshop.jpg" alt="fotologo">
+                    <figure class="wow flip" data-wow-duration="2s">
+                        <img src="../assets/img/icons/logolatinshop.jpg" alt="fotologo">
+                    </figure>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,30 +67,17 @@
                     <div class="col-xs-12 col-md-8">
                         <h1 class="mb-5">Nosotros</h1>
                         <div class="textinfo">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas similique
-                                mollitia quis culpa nisi.
-                                Error, ad? Est, soluta? Sint at doloribus ratione magni sapiente suscipit quos
-                                asperiores accusantium
-                                corrupti.
-                                Corrupti ex saepe consequuntur, iusto, reprehenderit neque quidem delectus id sapiente
-                                repellat nihil
-                                assumenda, cupiditate odio veniam amet a tempore incidunt culpa laboriosam obcaecati
-                                explicabo nisi?
-                                Asperiores necessitatibus iusto eum.
-                                Iste maxime excepturi, quidem pariatur molestias illum quis cupiditate sunt praesentium
-                                est provident
-                                maiores deleniti impedit, animi, temporibus vero similique quas. Quibusdam corporis
-                                necessitatibus
-                                reiciendis laborum animi vero quo dolore.
-                                Expedita labore harum illum architecto a quaerat minima quae! Nulla perferendis
-                                aspernatur recusandae,
-                                doloremque culpa vero ad enim vel nobis fugiat beatae temporibus ipsam totam nam placeat
-                                molestiae quidem
-                                accusamus.
-                                Dolor, eos repudiandae fuga eius quia aperiam eveniet molestiae sint ex unde tempora
-                                neque quidem nisi
-                                eligendi quod blanditiis amet assumenda sed aspernatur velit, odio voluptate rerum
-                                placeat animi. Nostrum.
+                            <p>En LatinShop Online, vivimos la pasión por la música. Creemos que cada nota es una
+                                historia, cada ritmo una emoción. Nos
+                                dedicamos a ofrecer instrumentos de alta calidad, perfectos para músicos de todos los
+                                niveles. Desde percusiones latinas
+                                hasta accesorios esenciales, seleccionamos cuidadosamente cada producto para garantizar
+                                sonido auténtico y durabilidad.
+                                Trabajamos con marcas reconocidas y artesanos expertos, asegurando la mejor experiencia
+                                musical. Además, ofrecemos
+                                asesoría personalizada, envíos seguros y atención excepcional. Nuestra comunidad crece
+                                día a día, uniendo a músicos con
+                                el mismo amor por la música. LatinShop Online, donde cada ritmo cobra vida.
                             </p>
                         </div>
                     </div>
@@ -155,10 +145,22 @@
             </svg>
         </a>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="../assets/js/wow.min.js"></script>
+            <script>
+              wow = new WOW(
+                {
+                  boxClass: 'wow',      // default
+                  animateClass: 'animated', // default
+                  offset: 0,          // default
+                  mobile: true,       // default
+                  live: true        // default
+                }
+              )
+              wow.init();
+            </script>
 </body>
 
 </html>

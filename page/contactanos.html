@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style-new.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+
 
 </head>
 
@@ -64,7 +66,9 @@
                 <div class="row align-items-center">
                     <div class="col-xs-12 col-md-6">
                         <div class="titulo">
-                            <h1>Contactanos</h1>
+                            <figure class="wow bounceInRight" data-wow-delay="5">
+                                <h1>Contactanos</h1>
+                            </figure>
                         </div>
                         <form class="formulario">
                             <div class="mb-3">
@@ -101,7 +105,7 @@
                                 <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones
                                     xD</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary btn-new-lg">Enviar</button>
                         </form>
                     </div>
                     <div class="col-xs-12 col-md-6">
@@ -169,9 +173,22 @@
             </svg>
         </a>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="../assets/js/wow.min.js"></script>
+            <script>
+              wow = new WOW(
+                {
+                  boxClass: 'wow',      // default
+                  animateClass: 'animated', // default
+                  offset: 0,          // default
+                  mobile: true,       // default
+                  live: true        // default
+                }
+              )
+              wow.init();
+            </script>
 </body>
 
 </html>

@@ -1,28 +1,54 @@
 @forward "normalize";
 
+$color-black: black;
+$color-verde: #48A46B;
+$color-primary: #95f8bb;
+$color-secondary: #1b7c40;
+$numero-fuente: 24px;
+
+@mixin btn($bg, $color) {
+    padding: 0px 14px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    color: $color;
+    background-color:$bg;
+}
+
 
 h1 {
-    color: black;
-    font-size: 34px;
+    color: $color-black;
+    font-size: $numero-fuente;
     font-weight: 700;
 }
 
 h2 {
-    color: black;
-    font-size: 24px;
+    color: $color-black;
+    font-size: $numero-fuente;
     font-weight: 600;
 }
 
 h3 {
-    color: black;
+    color: $color-black;
     font-size: 18px;
     font-weight: 500;
 }
 
 h4 {
-    color: black;
+    color: $color-black;
     font-size: 14px;
     font-weight: 400;
+}
+
+.btn-new-lg{
+    //Primero el fondo y segundo el color del texto
+    @include btn($color-primary, $color-black);
+    font-size: 24px;
+    &:hover{
+        @include btn($color-secondary, #ccc);
+    }
 }
 
 
@@ -81,7 +107,7 @@ header {
 .no-bootstrap header {
     display: flex;
     justify-content: space-between;
-    background-color: #48A46B;
+    background-color: $color-verde;
     align-items: center;
     padding: 0px 100px;
 }
@@ -149,8 +175,7 @@ main {
             // height: 100%;
             align-items: start;
 
-            .container {
-                .left {
+              
                     .textinfo {
 
                         width: 816px;
@@ -163,8 +188,19 @@ main {
                     h1 {
                         font-size: 64px;
                     }
-                }
-            }
+
+                                        .carousel-control-next,
+                                        .carousel-control-prev {
+                                          padding: 10px;
+                                          border-radius: 100px;
+                                          background: #3e3e3e;
+                                          height: 40px;
+                                          width: 40px;
+                                          top: 0;
+                                          bottom: 0;
+                                          margin: auto 8px;
+                                        }
+                
         }
     }
 
@@ -172,7 +208,7 @@ main {
         section {
             .container {
                 h1 {
-                    color: black;
+                    color: $color-black;
                 }
             }
         }
@@ -209,7 +245,7 @@ main {
 footer {
     align-items: center;
     text-align: center;
-    background-color: #48A46B;
+    background-color: $color-verde;
     justify-content: space-between;
     z-index: 99;
     position: relative;

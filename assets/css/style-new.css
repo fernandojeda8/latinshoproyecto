@@ -41,6 +41,28 @@ h4 {
   font-weight: 400;
 }
 
+.btn-new-lg {
+  padding: 0px 14px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  color: black;
+  background-color: #95f8bb;
+  font-size: 24px;
+}
+.btn-new-lg:hover {
+  padding: 0px 14px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  color: #ccc;
+  background-color: #1b7c40;
+}
+
 /* --------inicio del header-------- */
 header {
   height: 80px;
@@ -122,14 +144,25 @@ main.nosotros-page section .container figure img {
 main.productos-page section {
   align-items: start;
 }
-main.productos-page section .container .left .textinfo {
+main.productos-page section .textinfo {
   width: 816px;
   height: 413px;
   background-color: gray;
   display: table;
 }
-main.productos-page section .container .left h1 {
+main.productos-page section h1 {
   font-size: 64px;
+}
+main.productos-page section .carousel-control-next,
+main.productos-page section .carousel-control-prev {
+  padding: 10px;
+  border-radius: 100px;
+  background: #3e3e3e;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto 8px;
 }
 main.servicio-page section .container h1 {
   color: black;
